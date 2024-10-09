@@ -45,72 +45,72 @@ public class HUDTotal : UIBase
 
     }
 
-    public void SelectTab(LobbyTab tab)
-    {
+    //public void SelectTab(LobbyTab tab)
+    //{
 
-        var passivecardupgrade = GameRoot.Instance.UISystem.GetUI<PopupPassiveCardUpgrade>();
+    //    var passivecardupgrade = GameRoot.Instance.UISystem.GetUI<PopupPassiveCardUpgrade>();
 
-        if (passivecardupgrade != null)
-        {
-            passivecardupgrade.SortingRollBack();
-        }
+    //    if (passivecardupgrade != null)
+    //    {
+    //        passivecardupgrade.SortingRollBack();
+    //    }
 
 
-        var lobbybattle = GameRoot.Instance.UISystem.GetUI<PageLobbyBattle>();
+    //    var lobbybattle = GameRoot.Instance.UISystem.GetUI<PageLobbyBattle>();
 
-        if (lobbybattle != null)
-        {
-            lobbybattle.SortingRollBack();
-        }
+    //    if (lobbybattle != null)
+    //    {
+    //        lobbybattle.SortingRollBack();
+    //    }
 
-        var upgrade = GameRoot.Instance.UISystem.GetUI<PopupOutGameUnitUpgrade>();
+    //    var upgrade = GameRoot.Instance.UISystem.GetUI<PopupOutGameUnitUpgrade>();
 
-        if(upgrade != null)
-        {
-            upgrade.SortingRollBack();
-        }
+    //    if(upgrade != null)
+    //    {
+    //        upgrade.SortingRollBack();
+    //    }
         
-        switch (tab)
-        {
-            case LobbyTab.Shop:
-                break;
-            case LobbyTab.Card:
-                {
-                    GameRoot.Instance.UISystem.OpenUI<PopupPassiveCardUpgrade>(popup => {
-                        popup.Init();
-                        popup.CustomSortingOrder();
-                    });
-                }
-                break;
-            case LobbyTab.Fight:
-                GameRoot.Instance.UISystem.OpenUI<PageLobbyBattle>(popup => {
-                    popup.Init();
-                    popup.CustomSortingOrder();
-                });
-                break;
-            case LobbyTab.Upgrade:
-                {
-                    GameRoot.Instance.UISystem.OpenUI<PopupOutGameUnitUpgrade>(popup => {
-                        popup.CustomSortingOrder();
-                        popup.Init();
-                    });
-                }
-                break;
-        }
+    //    switch (tab)
+    //    {
+    //        case LobbyTab.Shop:
+    //            break;
+    //        case LobbyTab.Card:
+    //            {
+    //                GameRoot.Instance.UISystem.OpenUI<PopupPassiveCardUpgrade>(popup => {
+    //                    popup.Init();
+    //                    popup.CustomSortingOrder();
+    //                });
+    //            }
+    //            break;
+    //        case LobbyTab.Fight:
+    //            GameRoot.Instance.UISystem.OpenUI<PageLobbyBattle>(popup => {
+    //                popup.Init();
+    //                popup.CustomSortingOrder();
+    //            });
+    //            break;
+    //        case LobbyTab.Upgrade:
+    //            {
+    //                GameRoot.Instance.UISystem.OpenUI<PopupOutGameUnitUpgrade>(popup => {
+    //                    popup.CustomSortingOrder();
+    //                    popup.Init();
+    //                });
+    //            }
+    //            break;
+    //    }
 
-        foreach (var toggle in lobbyToggles)
-        {
-            var toggleani = toggle.gameObject.GetComponent<Animator>();
-            toggleani.SetTrigger("Normal");
-        }
+    //    foreach (var toggle in lobbyToggles)
+    //    {
+    //        var toggleani = toggle.gameObject.GetComponent<Animator>();
+    //        toggleani.SetTrigger("Normal");
+    //    }
 
-        var ani = lobbyToggles[(int)tab].gameObject.GetComponent<Animator>();
-        if (ani != null)
-        {
-            SoundPlayer.Instance.PlaySound("btn");
-            ani.SetTrigger("Selected");
-        }
-    }
+    //    var ani = lobbyToggles[(int)tab].gameObject.GetComponent<Animator>();
+    //    if (ani != null)
+    //    {
+    //        SoundPlayer.Instance.PlaySound("btn");
+    //        ani.SetTrigger("Selected");
+    //    }
+    //}
 
 
     IEnumerator WaitOneFrame()
@@ -141,7 +141,7 @@ public class HUDTotal : UIBase
 
         if (on)
         {
-            SelectTab(tab);
+            //SelectTab(tab);
         }
 
         foreach (var toggle in lobbyToggles)

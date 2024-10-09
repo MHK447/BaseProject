@@ -31,12 +31,6 @@ public class GameRoot : Singleton<GameRoot>
 	public PlayTimeSystem PlayTimeSystem { get; private set; } = new PlayTimeSystem();
 	public EffectSystem EffectSystem { get; private set; } = new EffectSystem();
 	public TutorialSystem TutorialSystem { get; private set; } = new TutorialSystem();
-	public InGameBattleSystem InGameBattleSystem { get; private set; } = new InGameBattleSystem();
-	public InGameUnitUpgradeSystem UnitUpgradeSystem { get; private set; } = new InGameUnitUpgradeSystem();
-	public UnitSkillSystem UnitSkillSystem { get; private set; } = new UnitSkillSystem();
-	public SkillCardSystem SkillCardSystem { get; private set; } = new SkillCardSystem();
-	public OutGameUnitUpgradeSystem OutGameUnitUpgradeSystem { get; private set; } = new OutGameUnitUpgradeSystem();
-	public SelectGachaWeaponSkillSystem GachaSkillSystem { get; private set; } = new SelectGachaWeaponSkillSystem();
 
 
 	public AdManager GetAdManager { get { return AdManager; } }
@@ -112,7 +106,7 @@ public class GameRoot : Singleton<GameRoot>
 
 		UserData.Update();
 		PlayTimeSystem.Update();
-		GachaSkillSystem.Update();
+		//GachaSkillSystem.Update();
 
 		if (deltaTime >= 1f) // one seconds updates;
 		{
@@ -233,9 +227,9 @@ public class GameRoot : Singleton<GameRoot>
 		yield return new WaitUntil(() => loadcount == 1);
 		UserData.Load();
 		InGameSystem.ChangeMode(CurInGameType);
-		InGameBattleSystem.Create();
-		UnitUpgradeSystem.Create();
-		GachaSkillSystem.Create();
+		//InGameBattleSystem.Create();
+		//UnitUpgradeSystem.Create();
+		//GachaSkillSystem.Create();
 
 		LoadComplete = true;
 
@@ -317,8 +311,8 @@ public class GameRoot : Singleton<GameRoot>
 		}
 
 		//ProjectUtility.Init();
-		InGameBattleSystem.Create();
-		UnitUpgradeSystem.Create();
+		//InGameBattleSystem.Create();
+		//UnitUpgradeSystem.Create();
 	}
 
 	private void SetNativeLanguage()

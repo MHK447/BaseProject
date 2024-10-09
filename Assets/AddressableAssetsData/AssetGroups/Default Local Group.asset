@@ -41,20 +41,12 @@ MonoBehaviour:
     m_Address: UI/Page/PageFade
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 8bb6d55927a9b1e4e9751a5ec422815b
-    m_Address: UI/Popup/PopupIngameUpgrade
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: e4b2c1ca2572b4762967f68bdb5e455c
     m_Address: SoundPlayer
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: b4e22d488a032c6418ee0a5b653520b1
     m_Address: UI/Page/LoadingBasic
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 8004488da7e234e35a8251a48d26a4de
-    m_Address: Effect/IconText
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: cea350cf6dfd04335add1be0c8f543ef
@@ -145,26 +137,6 @@ MonoBehaviour:
     m_Address: Unit017
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: f3f39e6e2604e49fbb3b6cbe875887dc
-    m_Address: UI/Popup/PopupGachaUnitCard
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 15a44e5699c38ea44a881a2802fbbb95
-    m_Address: UI/Popup/PopupLegendCombine
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 1ceb8d2d30760ce48ab24b393b96c2cd
-    m_Address: UI/Popup/PopupStageResult
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 503595630f1190749962bad6aa5f1ca9
-    m_Address: UI/Popup/PopupStageGiveup
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b6db01813cf64425392822046b76a5f9
-    m_Address: UI/Popup/PopupInGameUnitInfo
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: e1b3f6b856c614466a0c1bbe6b1f6105
     m_Address: Enemy_10001
     m_ReadOnly: 0
@@ -175,10 +147,6 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 16dcc31f72a1d4ec1a1516a1ff835cc3
     m_Address: Enemy_1001
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d5bd4475185cb467591266cfc6224945
-    m_Address: UI/Popup/PopupUnitUpgrade
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 5f779285b0c79184994bb5b7cf08f747
@@ -243,10 +211,6 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: bd2477d741a482540a491990f45d3705
     m_Address: Effect/DeathEffect
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 5bfac7ff753f742629ffd13c543fc514
-    m_Address: UI/Popup/PopupSelectGacha
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 7563697d7242fb54f838969faa2610d3
