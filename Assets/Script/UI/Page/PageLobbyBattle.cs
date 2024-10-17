@@ -66,12 +66,12 @@ public class PageLobbyBattle : UIBase
         {
             HighWaveText.text = $"Highest Wave:{highwave}";
 
-            var unittd = Tables.Instance.GetTable<EnemyInfo>().GetData(data.boss_idx);
+            //var unittd = Tables.Instance.GetTable<EnemyInfo>().GetData(data.boss_idx);
 
-            foreach (var unitimg in UnitImgList)
-            {
-                unitimg.sprite = Config.Instance.GetUnitImg(unittd.image);
-            }
+            //foreach (var unitimg in UnitImgList)
+            //{
+            //    unitimg.sprite = Config.Instance.GetUnitImg(unittd.image);
+            //}
         }
     }
 

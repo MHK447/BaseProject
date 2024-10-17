@@ -126,7 +126,7 @@ public class HUDTotal : UIBase
         {
             var ani = lobbyToggles[(int)defualtOption].gameObject.GetComponent<Animator>();
             if (ani != null)
-            {
+            {   
                 ani.SetTrigger("Selected");
             }
             ChangeTab(defualtOption, true);
