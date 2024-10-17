@@ -56,7 +56,6 @@ public class InGameTycoon : InGameMode
         base.LoadUI();
 
         GameRoot.Instance.UISystem.OpenUI<HUDTotal>();
-        GameRoot.Instance.UISystem.OpenUI<PageLobbyBattle>(popup => popup.Init());
         GameRoot.Instance.InGameSystem.InitPopups();
     }
 
